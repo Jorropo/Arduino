@@ -28,6 +28,8 @@
 #define OSX 0
 #define WINDOWS 1
 #define UBUNTU 2
+#define LINUX 2
+#define UNIX 2
 
 #include "Keyboard.h"
 
