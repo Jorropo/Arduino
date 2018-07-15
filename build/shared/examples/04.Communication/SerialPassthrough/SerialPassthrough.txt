@@ -1,0 +1,1 @@
+Use your Arduino as usb -> serial (If need to use it as ISP take a look at examples>Arduino as ISP).

@@ -1,0 +1,1 @@
+Reads a serial input string until it sees a newline, then converts the string to a number if the characters are digits.

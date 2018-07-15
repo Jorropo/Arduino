@@ -1,0 +1,1 @@
+Examples of how to append different data types to Strings.

@@ -22,9 +22,11 @@
   by Erik Nyquist
 */
 
+#define BAUD 9600
+
 void setup() {
-  Serial.begin(9600);
-  Serial1.begin(9600);
+  Serial.begin(BAUD);
+  Serial1.begin(BAUD);
 }
 
 void loop() {
