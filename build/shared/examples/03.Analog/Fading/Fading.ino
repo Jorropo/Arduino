@@ -16,7 +16,7 @@
   http://www.arduino.cc/en/Tutorial/Fading
 */
 
-int ledPin = 9;    // LED connected to digital pin 9
+int ledPin = LED_BUILTIN;    // LED connected to digital pin 9
 
 void setup() {
   // nothing happens in setup

@@ -20,7 +20,7 @@
   http://www.arduino.cc/en/Tutorial/Dimmer
 */
 
-const int ledPin = 9;      // the pin that the LED is attached to
+const int ledPin = LED_BUILTIN;      // the pin that the LED is attached to
 
 void setup() {
   // initialize the serial communication:

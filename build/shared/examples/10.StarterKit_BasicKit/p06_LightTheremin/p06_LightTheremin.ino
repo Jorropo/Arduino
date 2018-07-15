@@ -24,7 +24,7 @@ int sensorLow = 1023;
 // variable to calibrate high value
 int sensorHigh = 0;
 // LED pin
-const int ledPin = 13;
+const int LED_BUILTIN;
 
 void setup() {
   // Make the LED pin an output and turn it on

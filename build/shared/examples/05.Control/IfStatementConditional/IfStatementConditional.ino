@@ -25,9 +25,9 @@
 */
 
 // These constants won't change:
-const int analogPin = A0;    // pin that the sensor is attached to
-const int ledPin = 13;       // pin that the LED is attached to
-const int threshold = 400;   // an arbitrary threshold level that's in the range of the analog input
+const int analogPin = A0;       // pin that the sensor is attached to
+const int ledPin = LED_BUILTIN; // pin that the LED is attached to
+const int threshold = 400;      // an arbitrary threshold level that's in the range of the analog input
 
 void setup() {
   // initialize the LED pin as an output:

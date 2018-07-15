@@ -25,8 +25,8 @@
 */
 
 // These constants won't change:
-const int sensorPin = A0;    // pin that the sensor is attached to
-const int ledPin = 9;        // pin that the LED is attached to
+const int sensorPin = A0;       // pin that the sensor is attached to
+const int ledPin = LED_BUILTIN; // pin that the LED is attached to
 
 // variables:
 int sensorValue = 0;         // the sensor value

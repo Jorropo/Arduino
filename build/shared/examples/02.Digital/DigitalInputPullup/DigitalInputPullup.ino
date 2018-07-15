@@ -6,7 +6,7 @@
 
   The circuit:
   - momentary switch attached from pin 2 to ground
-  - built-in LED on pin 13
+  - built-in LED on pin ledPin
 
   Unlike pinMode(INPUT), there is no pull-down resistor necessary. An internal
   20K-ohm resistor is pulled to 5V. This configuration causes the input to read
@@ -20,27 +20,31 @@
   http://www.arduino.cc/en/Tutorial/InputPullupSerial
 */
 
+// constants won't change. They're used here to set pin numbers:
+const int buttonPin = 2;        // the number of the pushbutton pin
+const int ledPin = LED_BUILTIN; // the number of the LED pin
+
 void setup() {
   //start serial connection
   Serial.begin(9600);
   //configure pin 2 as an input and enable the internal pull-up resistor
-  pinMode(2, INPUT_PULLUP);
-  pinMode(13, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(ledPin, OUTPUT);
 
 }
 
 void loop() {
   //read the pushbutton value into a variable
-  int sensorVal = digitalRead(2);
+  int sensorVal = digitalRead(buttonPin);
   //print out the value of the pushbutton
   Serial.println(sensorVal);
 
   // Keep in mind the pull-up means the pushbutton's logic is inverted. It goes
-  // HIGH when it's open, and LOW when it's pressed. Turn on pin 13 when the
+  // HIGH when it's open, and LOW when it's pressed. Turn on pin ledPin when the
   // button's pressed, and off when it's not:
   if (sensorVal == HIGH) {
-    digitalWrite(13, LOW);
+    digitalWrite(ledPin, LOW);
   } else {
-    digitalWrite(13, HIGH);
+    digitalWrite(ledPin, HIGH);
   }
 }
