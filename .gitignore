@@ -46,6 +46,7 @@ build/linux/*.tgz
 build/linux/*.tar.xz
 build/linux/*.tar.bz2
 build/linux/*.zip
+build/linux/arduino-*
 build/linux/libastylej*
 build/linux/liblistSerials*
 build/shared/reference*.zip
